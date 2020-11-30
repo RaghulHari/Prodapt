@@ -1,0 +1,94 @@
+<header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+  
+      <div class="logo mr-auto">
+        <h1 class="text-light" ><a href="index.html"><span>VOIZFONICA</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+  
+      <nav class="nav-menu d-none d-lg-block">
+        <ul><br>
+          <!-- <li class="active"><a href="#a">View all</a></li> -->
+          <!-- <li class="active"><a href="#b">View Customer</a></li> -->
+          <!-- <li class="active"><button id="p" type="button" class="btn btn-link">||  View Customers  || </button></li> -->
+          <!-- <li class="active"><a href="#c">Update Customer</a></li> -->
+          <!-- <li class="active"> <button id="p" type="button" class="btn btn-link" (click)="getAll()">  View || </button></li> -->
+          <!-- <li class="active"> </li> -->
+  
+          <!-- <li class="active"><a href="#d">Delete Customer</a></li> -->
+          <!-- <li class="active"><button id="p" type="button" class="btn btn-link">Delete Customer ||</button></li> -->
+          <!-- <li class="active"><a href="#portfolio">Services</a></li> -->
+          <!-- <li class="active"><button id="p" type="button" class="btn btn-link">Update Customer ||</button></li> -->
+          <!-- <li class="active"><a href="http://localhost:4401/main">Logout</a></li> -->
+          <li class="active"><button id="p" type="button" class="btn btn-link" (click)="gotomain()">  Logout  </button></li>
+          <!-- <li class="active"><button type="submit" class="btn btn-secondary" (click)="gotomodify()">View Profile</button></li>&nbsp;&nbsp; -->
+          <!-- <li style="text-align: right;" class="active"><a  href="#" >Welcome {{use.firstName}}</a></li> -->
+          <!-- <li class="active"><button id="p" type="button" class="btn btn-secondary" (click)="gotoview()">  Welcome {{use.firstName}} </button></li> -->
+          <!-- <li class="active"><button type="submit" class="btn btn-secondary" (click)="gotomodify()">Welcome {{use.firstName}}</button></li> -->
+        </ul>
+      </nav>
+  
+    </div>
+  </header>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+ <div class="wrapper">
+        <table id="acrylic">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Plan Id</th>
+                    <th>Amount</th>
+                    <!-- <th>Profession</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let serv of servs">
+                    <td>{{serv.id}}</td>
+                    <td>{{serv.planId}}</td>
+                    <td>{{serv.amount}}</td>
+                    <!-- <td>Jockey</td> -->
+                </tr>
+                <!-- <tr>
+                    <td>Harry Sparrowhead</td>
+                    <td>34</td>
+                    <td>89</td>
+                    <td>Trainer</td>
+                </tr>
+                <tr>
+                    <td>Marjorie Doors</td>
+                    <td>32</td>
+                    <td>76</td>
+                    <td>Yard Manager</td>
+                </tr>
+                <tr>
+                    <td>Earnest Piggington-Smithe</td>
+                    <td>18</td>
+                    <td>98</td>
+                    <td>Groom</td>
+                </tr>
+                <tr>
+                    <td>Earnest Piggington-Smithe</td>
+                    <td>18</td>
+                    <td>98</td>
+                    <td>Groom</td>
+                </tr>
+                <tr>
+                    <td>Earnest Piggington-Smithe</td>
+                    <td>18</td>
+                    <td>98</td>
+                    <td>Groom</td>
+                </tr>
+                <tr>
+                    <td>Earnest Piggington-Smithe</td>
+                    <td>18</td>
+                    <td>98</td>
+                    <td>Groom</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
